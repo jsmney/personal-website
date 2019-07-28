@@ -1,0 +1,171 @@
+/** {
+	border: 1px solid red;
+}*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+}
+
+.header{
+    background-color: #fff;
+}
+.container {
+  max-width: 940px;
+  padding: 0 10px;
+  min-width: 360px;
+}
+
+.jumbotron {
+  height: 250px;
+  background: url('..//img/brushplay.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.nav {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.nav li {
+  color: #555;
+  font-family: "Source Sans Pro", serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px;
+  font-size: 1.2em;
+  display: inline;
+}
+
+.nav li a {
+	display: inline-block;
+}
+
+.main {
+  position: relative;
+  top: 30px;
+  text-align: center;
+}
+
+.main h1 {
+  color: #fff;	
+  text-shadow:0px 1px 6px rgba(0,0,0,0.6); 
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+h1 strong {
+	font-weight: 700;
+	}
+	
+.content {
+  padding: 10px;
+  margin: 20px;
+}
+
+.row {
+	margin-top: 30px;
+}
+
+.content li {
+	list-style: none;
+}
+
+h1{
+	font-size: 2em;
+	}
+	
+.bio{
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	}
+	
+.btn {
+	display: inline-block;
+	font-family: "Source Sans Pro", sans-serif;
+	letter-spacing: 1px;
+	font-size: .6em;
+	}
+
+.btn:hover {
+	background-color: #eee;
+	}
+
+h2 {
+  	font-size: 1.7em;
+	font-family: "Source Sans Pro", serif;
+}
+
+h3 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 200;
+	font-size: 1.5em;
+}
+
+em {
+	font-family: "Source Sans Pro", sans-serif;
+	font-style: italic;
+	font-weight:300;
+	padding: 8px 24px 24px 24px;
+	font-size: 1.3em;
+}
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+a:hover {
+	text-decoration: none;
+	background-color: #eee;
+	}
+
+/*
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+*/
+.clearfix {
+  clear: both;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+@media (max-width: 500px) {
+  .main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+}
