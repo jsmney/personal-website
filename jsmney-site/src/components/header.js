@@ -21,10 +21,20 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <Link>Hello</Link>
-      <Link>Hello</Link>
-      <Link>Hello</Link>
-      <Link>Hello</Link>
+      <div>
+        <Link to="https://www.linkedin.com/in/jsmney/">
+          <img src="https://source.unsplash.com/random/40x40" alt="LinkedIn" />
+        </Link>
+        <Link to="https://github.com/jsmney">
+          <img src="https://source.unsplash.com/random/40x40" alt="Github" />
+        </Link>
+        <Link to="https://www.behance.net/jasminey">
+          <img src="https://source.unsplash.com/random/40x40" alt="Behance" />
+        </Link>
+        <Link to="http://dribbble.com/jsmney">
+          <img src="https://source.unsplash.com/random/40x40" alt="Dribbble" />
+        </Link>
+      </div>
     </div>
   </header>
 )

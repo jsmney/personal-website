@@ -90,6 +90,7 @@ sup {
 }
 img {
   border-style: none;
+  border-radius: 10px;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -640,4 +641,9 @@ header {
 
 .header a {
   margin: 0rem 1rem;
+  color: #0667a0;
+}
+
+.header a:hover {
+  text-decoration: underline;
 }
