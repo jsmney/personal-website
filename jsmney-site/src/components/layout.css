@@ -647,3 +647,7 @@ header {
 .header a:hover {
   text-decoration: underline;
 }
+/*
+.header > div {
+  outline: 1px solid red;
+} */

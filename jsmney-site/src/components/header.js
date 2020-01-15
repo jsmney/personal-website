@@ -1,43 +1,58 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div
-      className="header"
-      style={{
-        maxWidth: 960,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `#002855`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <div>
-        <Link to="https://www.linkedin.com/in/jsmney/">
-          <img src="https://source.unsplash.com/random/40x40" alt="LinkedIn" />
-        </Link>
-        <Link to="https://github.com/jsmney">
-          <img src="https://source.unsplash.com/random/40x40" alt="Github" />
-        </Link>
-        <Link to="https://www.behance.net/jasminey">
-          <img src="https://source.unsplash.com/random/40x40" alt="Behance" />
-        </Link>
-        <Link to="http://dribbble.com/jsmney">
-          <img src="https://source.unsplash.com/random/40x40" alt="Dribbble" />
-        </Link>
+const Header = ({ siteTitle }) => {
+  const linkedin = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        childImageSharp {
+          fixed(width: 40, height: 40) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <header>
+      <div
+        className="header"
+        style={{
+          maxWidth: 960,
+        }}
+      >
+        <h1 style={{ margin: 0 }}>
+          <Link
+            to="/"
+            style={{
+              color: `#002855`,
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
+        <div>
+          <Link to="https://www.linkedin.com/in/jsmney/">
+            <Img fixed={linkedin.image.childImageSharp.fixed} />
+          </Link>
+          <Link to="https://github.com/jsmney">
+            <Img fixed={linkedin.image.childImageSharp.fixed} />
+          </Link>
+          <Link to="https://www.behance.net/jasminey">
+            <Img fixed={linkedin.image.childImageSharp.fixed} />
+          </Link>
+          <Link to="http://dribbble.com/jsmney">
+            <Img fixed={linkedin.image.childImageSharp.fixed} />
+          </Link>
+        </div>
       </div>
-    </div>
-  </header>
-)
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

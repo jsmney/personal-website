@@ -16,7 +16,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-manifest`, // `gatsby-source-filesystem`
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
