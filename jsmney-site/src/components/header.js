@@ -1,21 +1,12 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import LinkedIn from "../images/social/linkedin-mark.png"
+import Github from "../images/social/github-mark.png"
+import Behance from "../images/social/behance-mark.png"
 
 const Header = ({ siteTitle }) => {
-  const linkedin = useStaticQuery(graphql`
-    query {
-      image: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fixed(width: 40, height: 40) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <header>
       <div
@@ -36,18 +27,15 @@ const Header = ({ siteTitle }) => {
           </Link>
         </h1>
         <div>
-          <Link to="https://www.linkedin.com/in/jsmney/">
-            <Img fixed={linkedin.image.childImageSharp.fixed} />
-          </Link>
-          <Link to="https://github.com/jsmney">
-            <Img fixed={linkedin.image.childImageSharp.fixed} />
-          </Link>
-          <Link to="https://www.behance.net/jasminey">
-            <Img fixed={linkedin.image.childImageSharp.fixed} />
-          </Link>
-          <Link to="http://dribbble.com/jsmney">
-            <Img fixed={linkedin.image.childImageSharp.fixed} />
-          </Link>
+          <a href="https://www.linkedin.com/in/jsmney/">
+            <img src={LinkedIn} alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/jsmney">
+            <img src={Github} alt="Github" />
+          </a>
+          <a href="https://www.behance.net/jasminey">
+            <img src={Behance} alt="Behance" />
+          </a>
         </div>
       </div>
     </header>
