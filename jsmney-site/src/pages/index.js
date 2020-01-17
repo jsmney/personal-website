@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from "react-helmet"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -13,14 +15,13 @@ import EastWest from "../images/eastwest.jpg"
 import TinyGH from "../images/gh-tiny.png"
 import headshot from "../images/jyw-web.png"
 
-import Helmet from "react-helmet"
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Jasmine Wang" />
     <Helmet>
       <meta property="og:image" content={headshot} />
       <meta property="twitter:image" content={headshot} />
+      <meta itemprop="image" content={headshot} />
     </Helmet>
     <div className="hero">
       <div className="headshot">
@@ -36,8 +37,9 @@ const IndexPage = () => (
           Illustrator, Photoshop, XD).
         </p>
         <p>
-          I like <a href="http://art.jasminey.com">drawing</a>, design, west
-          coast swing, and puzzles.
+          I like{" "}
+          <OutboundLink href="http://art.jasminey.com">drawing</OutboundLink>,
+          design, west coast swing, and puzzles.
         </p>
       </div>
     </div>
@@ -45,12 +47,14 @@ const IndexPage = () => (
     <h2>Projects</h2>
     <div className="projects">
       <div>
-        <a href="https://coreo-ai.herokuapp.com/">
+        <OutboundLink href="https://coreo-ai.herokuapp.com/">
           <img src={Coreo} alt="Coreo" className="project-image" />
-        </a>
+        </OutboundLink>
         <div>
           <h3>
-            <a href="https://coreo-ai.herokuapp.com/">Coreo</a>
+            <OutboundLink href="https://coreo-ai.herokuapp.com/">
+              Coreo
+            </OutboundLink>
           </h3>
           <h4>choreography assistance web app using machine learning</h4>
           <p>
@@ -62,19 +66,21 @@ const IndexPage = () => (
             workers, and video.js / videojs-record.
           </p>
           <p>
-            <a href="https://github.com/brain-dance/brain-dancer">
+            <OutboundLink href="https://github.com/brain-dance/brain-dancer">
               <img src={TinyGH} alt="Github Repo" className="icon" />
-            </a>
+            </OutboundLink>
           </p>
         </div>
       </div>
       <div>
-        <a href="https://www.youtube.com/watch?v=ugCaQ_JWw2s">
+        <OutboundLink href="https://www.youtube.com/watch?v=ugCaQ_JWw2s">
           <img src={Facestuff} alt="Facestuff" className="project-image" />
-        </a>
+        </OutboundLink>
         <div>
           <h3>
-            <a href="https://www.youtube.com/watch?v=ugCaQ_JWw2s">Facestuff</a>
+            <OutboundLink href="https://www.youtube.com/watch?v=ugCaQ_JWw2s">
+              Facestuff
+            </OutboundLink>
           </h3>
           <h4>toy camera mobile app using face detection</h4>
           <p>
@@ -82,19 +88,21 @@ const IndexPage = () => (
             and MongoDB.
           </p>
           <p>
-            <a href="https://github.com/brain-dance/brain-dancer">
+            <OutboundLink href="https://github.com/brain-dance/brain-dancer">
               <img src={TinyGH} alt="Github Repo" className="icon" />
-            </a>
+            </OutboundLink>
           </p>
         </div>
       </div>
       <div>
-        <a href="http://coconutsforsale.herokuapp.com/">
+        <OutboundLink href="http://coconutsforsale.herokuapp.com/">
           <img src={Coconuts} alt="Facestuff" className="project-image" />
-        </a>
+        </OutboundLink>
         <div>
           <h3>
-            <a href="http://coconutsforsale.herokuapp.com/">Coconuts, Inc</a>
+            <OutboundLink href="http://coconutsforsale.herokuapp.com/">
+              Coconuts, Inc
+            </OutboundLink>
           </h3>
           <h4>full stack e-commerce web application</h4>
           <p>
@@ -102,19 +110,19 @@ const IndexPage = () => (
             PostreSQL. Checkout using Stripe API.
           </p>
           <p>
-            <a href="https://github.com/team-coconut-tiki/grace-shopper">
+            <OutboundLink href="https://github.com/team-coconut-tiki/grace-shopper">
               <img src={TinyGH} alt="Github Repo" className="icon" />
-            </a>
+            </OutboundLink>
           </p>
         </div>
       </div>
       <div>
-        <a href="https://www.nacwala.com/">
+        <OutboundLink href="https://www.nacwala.com/">
           <img src={Nacwala} alt="NACWALA" className="project-image" />
-        </a>
+        </OutboundLink>
         <div>
           <h3>
-            <a href="https://www.nacwala.com/">NACWALA</a>
+            <OutboundLink href="https://www.nacwala.com/">NACWALA</OutboundLink>
           </h3>
           <h4>
             official website for the North America Chinese Writers Association
@@ -122,21 +130,21 @@ const IndexPage = () => (
           </h4>
           <p>Front end development and design using Bootstrap, HTML5, CSS.</p>
           <p>
-            <a href="https://github.com/jsmney/nacwala-2">
+            <OutboundLink href="https://github.com/jsmney/nacwala-2">
               <img src={TinyGH} alt="Github Repo" className="icon" />
-            </a>
+            </OutboundLink>
           </p>
         </div>
       </div>
       <div>
-        <a href="http://www.eastwestcultureandart.com/">
+        <OutboundLink href="http://www.eastwestcultureandart.com/">
           <img src={EastWest} alt="East West" className="project-image" />
-        </a>
+        </OutboundLink>
         <div>
           <h3>
-            <a href="http://www.eastwestcultureandart.com/">
+            <OutboundLink href="http://www.eastwestcultureandart.com/">
               East West Culture &amp; Art Center
-            </a>
+            </OutboundLink>
           </h3>
           <h4>official website for organization based in San Diego</h4>
           <p>
