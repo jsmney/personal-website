@@ -24,7 +24,12 @@ const IndexPage = () => (
           Hello! I'm a full stack software developer based in Chicago, IL.
         </h1>
         <p>
-          I like <a href="https://www.instagram.com/jsmney/">drawing</a>, west
+          I work primarily in React, Redux, Node, Express, Sequelize, and
+          PostgreSQL. I also work in Adobe Creative Cloud (InDesign,
+          Illustrator, Photoshop, XD).
+        </p>
+        <p>
+          I like <a href="http://art.jasminey.com">drawing</a>, design, west
           coast swing, and puzzles.
         </p>
       </div>
@@ -134,7 +139,11 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
+    <hr />
+    <div id="contact">
+      <h1>Let's get in touch!</h1>
+      <p>Send me an email at jasminey.tea@gmail.com</p>
+    </div>
   </Layout>
 )
 
