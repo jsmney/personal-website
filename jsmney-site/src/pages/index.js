@@ -11,10 +11,17 @@ import Coconuts from "../images/coconutsinc.png"
 import Nacwala from "../images/nacwala.png"
 import EastWest from "../images/eastwest.jpg"
 import TinyGH from "../images/gh-tiny.png"
+import headshot from "../images/jyw-web.png"
+
+import Helmet from "react-helmet"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Jasmine Wang" />
+    <Helmet>
+      <meta property="og:image" content={headshot} />
+      <meta property="twitter:image" content={headshot} />
+    </Helmet>
     <div className="hero">
       <div className="headshot">
         <Image />
