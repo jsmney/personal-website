@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Jasmine Wang Full Stack Developer`,
-    description: `Jasmine Wang is a full stack software engineer based in Chicago, Illinois. Specializes in React, Redux, Node, Express, Sequelize, PostgreSQL. Design experience in Adobe Creative Cloud (InDesign, Illustrator, Photoshop, XD)`,
+    title: `Jasmine Crane Senior Software Engineer`,
+    description: `Jasmine Crane is a senior software engineer based in Chicago, Illinois. Specializes in React, Redux, Node, Express, PostgreSQL. Design experience in Adobe Creative Cloud (InDesign, Illustrator, Photoshop, XD)`,
     author: `@jsmney`,
   },
   plugins: [
