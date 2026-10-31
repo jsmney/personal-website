@@ -1,0 +1,171 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+}
+
+.charis-sil-regular {
+  font-family: "Charis SIL", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.charis-sil-bold {
+  font-family: "Charis SIL", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.charis-sil-regular-italic {
+  font-family: "Charis SIL", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.charis-sil-bold-italic {
+  font-family: "Charis SIL", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.header{
+    background-color: #9ad6cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+  max-width: 940px;
+  padding: 0 10px;
+  min-width: 360px;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  height: 250px;
+  background: url('..//img/brushplay.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main {
+  position: relative;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.main h1 {
+  font-size: 30px;
+  padding: 1em;
+  outline: 6px double #9ad6cc;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+.content {
+  padding: 10px;
+  margin: 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #9ad6cc;
+}
+.btn {
+	display: inline-block;
+	font-family: "Source Sans Pro", sans-serif;
+	letter-spacing: 1px;
+	font-size: .6em;
+	}
+
+.btn:hover {
+	background-color: #eee;
+	}
+
+a:hover {
+	text-decoration: none;
+	background-color: #eee;
+	}
+
+.clearfix {
+  clear: both;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+  .main h1 {
+    font-size: 20px;
+  }
+}
+
+.social {
+  display: inline-block;
+  margin: 0 3em;
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.title {
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
+  margin: 0 1em;
+}
+
+h1 {
+  margin: 1em;
+}
+
+.project {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.project img {
+  width: 40%;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.project p {
+  margin-left: 20px;
+}
