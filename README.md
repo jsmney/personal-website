@@ -2,6 +2,6 @@
   Personal Website
 </h1>
 
-I built this website using [Gatsby](https://www.gatsbyjs.org/), which uses React components to render content.
+I built this website by hand! Using just HTML and CSS because libraries are overly complicated for what I want... :)
 
 [View it deployed](http://jasminey.com)
